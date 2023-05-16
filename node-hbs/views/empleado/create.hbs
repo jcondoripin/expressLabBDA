@@ -1,15 +1,15 @@
  <!DOCTYPE html>
 <html>
     <head>
-        <title>Crear Usuario</title>
+        <title>Crear Empleado</title>
     </head>
     <body>
         <div class="container">
             <h3>
-                <a href="/usuarios">Lista de Usuarios</a>
+                <a href="/empleados">Lista de Empleados</a>
             </h3>
-            <h1>Crear Nuevo Usuario</h1>
-            <form action="/usuarios/save" method="post">
+            <h1>Crear Nuevo Empleado</h1>
+            <form action="/empleados/save" method="post">
                 <table>
                     <tbody>
                         <tr>
@@ -21,12 +21,20 @@
                             <td><input type="text" name="apellido" /></td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td><input type="text" name="email" /></td>
+                            <td>DNI</td>
+                            <td><input type="text" name="dni" /></td>
                         </tr>
                         <tr>
-                            <td>Estado</td>
-                            <td><input type="text" name="estado" /></td>
+                            <td>Cargo</td>
+                            <td><input type="text" name="cargo" /></td>
+                        </tr>
+                        <tr>
+                            <td>Sueldo</td>
+                            <td><input type="text" name="sueldo" /></td>
+                        </tr>
+                        <tr>
+                            <td>Telefono</td>
+                            <td><input type="text" name="telefono" /></td>
                         </tr>
                         <tr>
                             <td colspan="2"><input type="submit" value="Grabar" /></td>
