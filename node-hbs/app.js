@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 var app = express();
-var mongoDB = 'mongodb://127.0.0.1:27017/mydb';
+var mongoDB = 'mongodb://127.0.0.1:27017/myappdb';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology:true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usuariosRouter);
+app.use('/usuarios', usuariosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

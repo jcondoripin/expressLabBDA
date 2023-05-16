@@ -9,4 +9,4 @@ var UsuarioSchema = new Schema({
     created_at: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Usuario', UsuarioSchema);
+module.exports = mongoose.model('usuarios', UsuarioSchema);
